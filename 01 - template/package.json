@@ -1,0 +1,9 @@
+{
+	"name": "calculator-js",
+	"description": "An app for doing math",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"server": "python3 -m http.server 8000"
+	}
+}

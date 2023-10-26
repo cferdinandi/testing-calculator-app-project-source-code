@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			body {
+				margin: 1em auto;
+				max-width: 40em;
+				width: 88%;
+			}
+
+			label,
+			input,
+			select {
+				display: block;
+				width: 100%;
+			}
+
+			label {
+				font-weight: bold;
+			}
+
+			input,
+			select {
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Calculator</h1>
+
+		<form>
+			<label for="numbers">Numbers (comma-separated)</label>
+			<input type="text" id="numbers" value="0">
+
+			<label for="math">Math to Do</label>
+			<select id="math">
+				<option value="add">Add</option>
+				<option value="subtract">Subtract</option>
+				<option value="multiply">Multiply</option>
+				<option value="divide">Divide</option>
+			</select>
+
+			<p>
+				<button>Do Math</button>
+			</p>
+		</form>
+
+		<div id="answer" aria-live="polite"></div>
+
+
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>
